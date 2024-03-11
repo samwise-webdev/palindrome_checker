@@ -4,6 +4,7 @@ const result = document.getElementById("result");
 
 // unicode 0061-007A
 
+//checks if input box is empty
 function empty() {
     if (textInput.value.length <= 0) {
         const emptyInput = "Please input a value"
@@ -11,13 +12,13 @@ function empty() {
     }
 }
 
+//converts input value to lowercase letters
 function lowercase() {
     const lowercase = textInput.value.toLowerCase();
     console.log(lowercase)
 }
 
-
-
+//functions to run on button click
 function palindromeCheck() {
     empty();
     lowercase();
