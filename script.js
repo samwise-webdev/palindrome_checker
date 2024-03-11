@@ -18,8 +18,15 @@ function lowercase() {
     console.log(lowercase)
 }
 
+//turn input into an array by character
+function inputArray() {
+    const originalArray = textInput.value
+    console.log(...originalArray);
+}
+
 //functions to run on button click
 function palindromeCheck() {
     empty();
     lowercase();
+    inputArray()
 }
