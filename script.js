@@ -12,9 +12,11 @@ function empty() {
 }
 
 function lowercase() {
-    const lowercase = textInput.value;
-    console.log(lowercase.toLowerCase())
+    const lowercase = textInput.value.toLowerCase();
+    console.log(lowercase)
 }
+
+
 
 function palindromeCheck() {
     empty();
