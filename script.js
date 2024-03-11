@@ -19,9 +19,9 @@ function lowercase() {
 }
 
 //turn input into an array by character
-function inputArray() {
+function inputArray(...lowercase) {
     const originalArray = textInput.value
-    console.log(...originalArray);
+    console.log(lowercase);
 }
 
 //functions to run on button click
