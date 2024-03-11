@@ -10,3 +10,13 @@ function empty() {
         alert(emptyInput)
     }
 }
+
+function lowercase() {
+    const lowercase = textInput.value;
+    console.log(lowercase.toLowerCase())
+}
+
+function palindromeCheck() {
+    empty();
+    lowercase();
+}
