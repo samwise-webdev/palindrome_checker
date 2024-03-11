@@ -14,19 +14,26 @@ function empty() {
 
 //converts input value to lowercase letters
 function lowercase() {
-    const lowercase = textInput.value.toLowerCase();
-    console.log(lowercase)
+    const lowerString = textInput.value.toLowerCase();
+    return lowerString
 }
 
+const inputLowerCase = lowercase();
+
+
 //turn input into an array by character
-function inputArray(...lowercase) {
-    const originalArray = textInput.value
-    console.log(lowercase);
+    // function inputArray(...lowercase) {
+    //     const originalArray = textInput.value
+    //     console.log(lowercase);
+    // } no, cannot use lowercase from other function b/c of scope - creates a new one
+
+function arrayify(...inputLowerCase) {
+    console.log(inputLowerCase)
 }
 
 //functions to run on button click
 function palindromeCheck() {
     empty();
     lowercase();
-    inputArray()
+    arrayify();
 }
