@@ -4,3 +4,9 @@ const result = document.getElementById("result");
 
 // unicode 0061-007A
 
+function empty() {
+    if (textInput.innerText.length <= 0) {
+        const emptyInput = "Please input a value"
+        alert(emptyInput)
+    }
+}
