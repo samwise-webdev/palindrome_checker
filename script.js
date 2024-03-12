@@ -21,11 +21,21 @@ function lowercase() {
 function arrayify() {
     const stringArray = Array.from(lowercase())
     console.log(stringArray);
+    return stringArray
 } //yay this one works
+
+function resultDisplay() {
+    if (arrayify() === arrayify().reverse) {
+        const result = result.innerHTML(`<div>${textInput.value} is a palindrome</div>`)
+        
+    }
+}
 
 //functions to run on button click
 function palindromeCheck() {
     empty();
     lowercase();
     arrayify();
+    resultDisplay();
 }
+
