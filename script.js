@@ -40,6 +40,8 @@ function palindromeCheck() {
     const stringArray = Array.from(lowerString);
     if (stringArray === stringArray.reverse()) {
         console.log("palindrome")
+    } else {
+        textInput.innerHTML = `${lowerString} is not a palindrome.`
     }
 
 }
