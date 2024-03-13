@@ -20,9 +20,9 @@ function palindromeCheck() {
     const stringReversed = Array.from(stringArray).reverse(); //need to reverse stringArray for some reason, not use textInput.value again. That didn't work, idk why
 
     if (stringArray.join('') === stringReversed.join('')) {
-        console.log("palindrome")
+        result.innerText = (`${stringArray.join('')} is a palindrome.`);
     } else {
-        console.log(`${stringArray.join('')} is not a palindrome.`); //have to .join() again b/c it will show up as an array otherwise
+        result.innerText = (`${stringArray.join('')} is not a palindrome.`); //have to .join() again b/c it will show up as an array otherwise
     }
 
 }
