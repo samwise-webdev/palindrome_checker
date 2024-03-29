@@ -12,6 +12,8 @@ function empty() {
     }
 }
 
+const punctRemover = /\w/g
+
 //functions to run on button click
     // using === doesn't compare contents of an array
 function palindromeCheck() {
