@@ -12,19 +12,22 @@ function empty() {
     }
 }
 
-const punctRemover = /\w/g
+function punctRemover() {
+    const punctfinder = /[^a-z0-9]/g;
+    textInput.value.replaceAll(punctfinder, "");
+}
 
 //functions to run on button click
     // using === doesn't compare contents of an array
 function palindromeCheck() {
     empty();
+    punctRemover(textInput.value);
     const stringArray = Array.from(textInput.value.toLowerCase());
     const stringReversed = Array.from(stringArray).reverse(); //need to reverse stringArray for some reason, not use textInput.value again. That didn't work, idk why
-
-    if (stringArray.join('') === stringReversed.join('')) {
-        result.innerText = (`${stringArray.join('')} is a palindrome.`);
-    } else {
-        result.innerText = (`${stringArray.join('')} is not a palindrome.`); //have to .join() again b/c it will show up as an array otherwise
-    }
+        if (stringArray.join('') === stringReversed.join('')) {
+            result.innerText = (`${stringArray.join('')} is a palindrome.`);
+        } else {
+            result.innerText = (`${stringArray.join('')} is not a palindrome.`); //have to .join() again b/c it will show up as an array otherwise
+        }
 
 }
