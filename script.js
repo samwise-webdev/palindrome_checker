@@ -12,9 +12,9 @@ function empty() {
     }
 }
 
-function punctRemover() {
+function punctRemover(textInput) {
     const punctfinder = /[^a-z0-9]/g;
-    textInput.value.replaceAll(punctfinder, "");
+    textInput.replaceAll(punctfinder, "");
 }
 
 //functions to run on button click
