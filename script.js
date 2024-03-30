@@ -28,8 +28,8 @@ function empty() {
 function palindromeCheck() {
     empty();
 //    punctRemover();
-    const cleanInput = textInput.value.replaceAll(/[^a-zA-Z0-9]/g, "");
-    const stringArray = Array.from(cleanInput.toLowerCase());
+    const cleanInput = textInput.value.replaceAll(/[^a-zA-Z0-9]/g, "").toLowerCase();
+    const stringArray = Array.from(cleanInput);
     const stringReversed = Array.from(cleanInput).reverse(); //need to reverse stringArray for some reason, not use textInput.value again. That didn't work, idk why
         if (stringArray.join('') === stringReversed.join('')) {
             result.innerText = (`${textInput.value} is a palindrome.`);
